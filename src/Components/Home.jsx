@@ -24,7 +24,7 @@ function Home() {
          <BlurText
          className="home-subtitle"
           text="Hey, I'm Arun Kumar R"
-          delay={150}
+          delay={80}
           animateBy="words"
           direction="top"
           onAnimationComplete={handleAnimationComplete}
@@ -32,7 +32,7 @@ function Home() {
         <BlurText
           className="text-type"
           text="Web Developer"
-          delay={150}
+          delay={80}
           animateBy="words"
           direction="top"
           onAnimationComplete={handleAnimationComplete}
@@ -41,7 +41,7 @@ function Home() {
         <BlurText
           className="text-p"
           text="Turning ideas into clean & modern code, A passionate web developer with a keen interest in creating dynamic and responsive web applications."
-          delay={150}
+          delay={80}
           animateBy="words"
           direction="top"
           onAnimationComplete={handleAnimationComplete}

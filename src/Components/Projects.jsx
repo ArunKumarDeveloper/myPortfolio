@@ -29,7 +29,7 @@ Implements dynamic search, API data rendering, and clean component structure for
 experience.</p>
 <p id="mobile">Recipe search app built with React and CSS, featuring a clean, responsive UI. Integrates the Spoonacular API to fetch recipes, ingredients, and instructions with dynamic search.</p>
       <div class="project-buttons">
-     <a href="#" target="_blank" class="site-link">View Site</a>
+     <a href="#" target="_blank" class="site-link">View Site  </a>
      <a href="https://github.com/ArunKumarWebDeveloper/FlavorFind" target="_blank" class="github-link">
       <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="github-icon" />
       </a>

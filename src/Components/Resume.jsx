@@ -49,7 +49,7 @@ function Resume() {
           <div className="overview-item">
             <span className="overview-label">Freelance</span>
             <p className="overview-text">
-              Open for commissions. Building responsive websites and web apps using the React ecosystem.
+              Open for Freelancing. Building responsive websites and web apps using the React ecosystem.
             </p>
           </div>
 
