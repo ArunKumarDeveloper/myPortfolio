@@ -7,7 +7,7 @@ function About() {
       
       {/* Top Section: What I Do / About Me Header */}
       <div className="about-header-container">
-        <p className="section-pre-title">What I Do as a Web Developer</p>
+        <p className="section-pre-title">What I Do as a Developer</p>
         <h2>I enjoy creating delightful, responsive web experiences.</h2>
       </div>
 
