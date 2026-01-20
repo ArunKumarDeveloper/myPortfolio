@@ -802,9 +802,15 @@ font-size:1.5rem;
 }
 
 /*footer styles*/
+#contact{
+ background-image: url("/footer.jpg");
+ background-position: center;
+ background-size: cover;
+}
+
 .new-footer {
-  background: #ffffff;
-  color: #1a1a1a;
+ 
+  color: #ffffff;
   padding: 60px 6vw 40px;
   font-family: "Inter", sans-serif;
 }
@@ -819,7 +825,8 @@ font-size:1.5rem;
 }
 
 /* Brand Column */
-.footer-brand {
+.footer-brand h2{
+  color: #ffffff;
   max-width: 260px;
 }
 
@@ -830,7 +837,7 @@ font-size:1.5rem;
 }
 
 .brand-role {
-  color: #000000;
+  color: #ffffff;
   margin-bottom: 20px;
   font-size: 0.95rem;
 }
@@ -838,7 +845,7 @@ font-size:1.5rem;
 .footer-contact-list p,
 .footer-contact-list a {
   font-size: 0.9rem;
-  color: #282828;
+  color: #ffffff;
   margin: 6px 0;
 }
 
@@ -850,7 +857,7 @@ font-size:1.5rem;
 
 .footer-contact-list a:hover {
   color: #00a6ff;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #ffffff;
 }
 
 /* Link Columns */
@@ -884,8 +891,8 @@ font-size:1.5rem;
 }
 
 .footer-column ul li a:hover {
-  color: #000;
-  border-bottom: 1px solid #000;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 
 /* Divider */
@@ -903,7 +910,7 @@ font-size:1.5rem;
   flex-wrap: wrap;
   gap: 20px;
   font-size: 0.85rem;
-  color: #000000;
+  color: #ffffff;
 }
 
 /* Bottom links */
@@ -915,8 +922,8 @@ font-size:1.5rem;
 }
 
 .footer-bottom p a:hover {
-  color: #000;
-  border-bottom: 1px solid #000;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 
 /* Icons */
@@ -928,7 +935,7 @@ font-size:1.5rem;
 
 .footer-icons a:hover {
   transform: scale(1.25);
-  color: #000;
+  color: #ffffff;
 }
 
 
