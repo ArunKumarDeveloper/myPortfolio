@@ -4,6 +4,19 @@ function Certificates() {
       <h2>Certificates</h2>
 
       <div className="certificates-container">
+        <div className="certificate-card">
+          <div className="cert-img-wrapper">
+            <img src="/rhcsa.png" alt="RHCSA " />
+            <a
+              className="view-btn"
+              href="https://www.credly.com/badges/e466889c-35b1-4eee-b1b8-881c4c472f70/public_url"
+              target="_blank"
+            >
+              <span>View</span>
+              <span className="arrow">↗</span>
+            </a>
+          </div>
+        </div>
 
         <div className="certificate-card">
           <div className="cert-img-wrapper">
