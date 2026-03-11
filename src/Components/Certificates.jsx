@@ -74,33 +74,6 @@ function Certificates() {
           </div>
         </div>
 
-        <div className="certificate-card">
-          <div className="cert-img-wrapper">
-            <img src="/JavaScript.png" alt="JS Certificate" />
-            <a
-              className="view-btn"
-              href="https://storage.googleapis.com/programminghub/certificate%2F1746940330471.pdf"
-              target="_blank"
-            >
-              <span>View</span>
-              <span className="arrow">↗</span>
-            </a>
-          </div>
-        </div>
-
-        <div className="certificate-card">
-          <div className="cert-img-wrapper">
-            <img src="/Node.Js.png" alt="NodeJS Certificate" />
-            <a
-              className="view-btn"
-              href="https://storage.googleapis.com/programminghub/certificate%2F1746945869881.pdf"
-              target="_blank"
-            >
-              <span>View</span>
-              <span className="arrow">↗</span>
-            </a>
-          </div>
-        </div>
 
       </div>
     </section>
