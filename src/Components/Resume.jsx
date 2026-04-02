@@ -42,7 +42,9 @@ function Resume() {
 
           <div className="overview-item">
             <span className="overview-label">Currently</span>
-            <p className="overview-text">Pursuing BCA at Jain University (Online). Seeking IT Helpdesk, Junior Linux/Sysadmin, or Junior Web Developer roles in Bangalore.</p>
+            <p className="overview-text">Pursuing BCA at Jain University (Online). Seeking IT Helpdesk, Junior Linux/Sysadmin, or Technical support roles in Bangalore.
+              and I am open to collaborating on open-source projects in Cloud Computing, Linux, and Web Development.
+            </p>
           </div>
 
           <div className="overview-item">
