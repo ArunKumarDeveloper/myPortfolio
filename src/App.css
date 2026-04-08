@@ -802,15 +802,16 @@ font-size:1.5rem;
 }
 
 /*footer styles*/
-#contact{
- background-image: url("/footer.jpg");
- background-position: center;
- background-size: cover;
+#contact {
+  background-image: url("/footer.jpg");
+  background-size: cover;
+  padding: auto;
+  box-shadow: 0 8px 30px rgba(255, 255, 255, 0.5);
+  margin:auto;
 }
 
 .new-footer {
  
-  color: #ffffff;
   padding: 60px 6vw 40px;
   font-family: "Inter", sans-serif;
 }
@@ -826,7 +827,7 @@ font-size:1.5rem;
 
 /* Brand Column */
 .footer-brand h2{
-  color: #ffffff;
+  color: #ffe600;
   max-width: 260px;
 }
 
@@ -837,27 +838,28 @@ font-size:1.5rem;
 }
 
 .brand-role {
-  color: #ffffff;
+  color: #ffe100;
   margin-bottom: 20px;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .footer-contact-list p,
 .footer-contact-list a {
-  font-size: 1rem;
-  color: #ffffff;
+  font-size: 1.2rem;
+  color: #000000;
   margin: 6px 0;
+  font-weight: 700;
 }
 
 .footer-contact-list a {
   text-decoration: none;
-  border-bottom: 1px solid rgb(0, 153, 255);
+  border-bottom: 1px solid rgb(0, 0, 0);
   transition: 0.2s;
 }
 
 .footer-contact-list a:hover {
-  color: #00a6ff;
-  border-bottom: 1px solid #ffffff;
+  color: #ffff00;
+  border-bottom: 1px solid #000000;
 }
 
 /* Link Columns */
@@ -865,10 +867,14 @@ font-size:1.5rem;
   display: flex;
   gap: 60px;
   flex-wrap: wrap;
+  backdrop-filter: blur(8px);
+  padding: 20px 30px;
+  border-radius: 20px;
 }
 
 .footer-column h4 {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
+  color: #ffff00;
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -884,8 +890,9 @@ font-size:1.5rem;
 
 .footer-column ul li a {
   text-decoration: none;
-  color: #0088ff;
-  font-size: 1.2rem;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 600;
   transition: 0.2s;
   border-bottom: 1px solid transparent;
 }
@@ -899,7 +906,7 @@ font-size:1.5rem;
 .footer-divider {
   margin: 25px 0;
   border: none;
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid #eeff00;
 }
 
 /* Bottom */
@@ -909,27 +916,27 @@ font-size:1.5rem;
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #ffffff;
 }
 
 /* Bottom links */
 .footer-bottom p a {
   margin-right: 5px;
-  color: #008cff;
+  color: #58e80f;
   text-decoration: none;
   transition: 0.2s;
 }
 
 .footer-bottom p a:hover {
-  color: #ffffff;
+  color: #45ff06;
   border-bottom: 1px solid #ffffff;
 }
 
 /* Icons */
 .footer-icons a {
   margin-right: 18px;
-  font-size: 1.15rem;
+  font-size: 1rem;
   transition: 0.2s;
 }
 
@@ -1061,7 +1068,7 @@ body.dark-mode .footer-divider{
   color: white;
 }
 body.dark-mode .footer-bottom a:hover {
-  color: #ffffff;
+  color: #e5ff00;
   border-bottom: 1px solid #000;
 }
 body.dark-mode .footer-column li a:hover{
