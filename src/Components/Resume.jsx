@@ -41,13 +41,6 @@ function Resume() {
           </div>
 
           <div className="overview-item">
-            <span className="overview-label">Currently</span>
-            <p className="overview-text">Pursuing BCA at Jain University (Online). Seeking IT Helpdesk, Junior Linux/Sysadmin, or Technical support roles in Bangalore.
-              and I am open to collaborating on open-source projects in Cloud Computing, Linux, and Web Development.
-            </p>
-          </div>
-
-          <div className="overview-item">
             <span className="overview-label">Soft Skills</span>
             <p className="overview-text">Technical troubleshooting, clear communication, incident management, fast learner, self-driven growth mindset.</p>
           </div>

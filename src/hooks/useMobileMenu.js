@@ -1,4 +1,14 @@
 import { useState, useEffect, useRef } from 'react';
+window.addEventListener('scroll', () => {
+  document.getElementById('custom-navbar')
+    .classList.toggle('scrolled', window.scrollY > 60);
+});
+           
+const obs = new IntersectionObserver(
+  (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+  { threshold: 0.15 }
+);
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el => obs.observe(el));
 
 const useMobileMenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

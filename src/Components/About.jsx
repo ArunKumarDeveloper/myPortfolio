@@ -30,7 +30,7 @@ function About() {
             transition={{ type: "spring", stiffness: 300 }}
         >
             <img src="/redhat.png" alt="NodeJS Icon" className="service-icon" />
-            <h3>Linux System Administration</h3>
+            <h3>Linux </h3>
           <p>RHCSA-certified with hands-on experience in RHEL — systemd, SELinux, firewalld, LVM, shell scripting, Apache deployment, and cron automation.</p>
         </motion.div>
 
@@ -40,7 +40,7 @@ function About() {
             transition={{ type: "spring", stiffness: 300 }}
         >
             <img src="/jumbo.png" alt="Git Icon" className="service-icon" />
-             <h3>Technical Support</h3>
+             <h3>Customer/Technical Support</h3>
           <p>1.8 years at Jumbotail — resolving 100+ daily issues, 91% satisfaction score, end-to-end incident ownership using Freshworks CRM.</p>
         </motion.div>
 
