@@ -1275,25 +1275,7 @@ body.dark-mode .about-split-img    { background: var(--border); }
   .about-container { grid-template-columns: 1fr; }
 }
 
-/* ================================================================
-   REQUIRED JS — Add inside <script> in your HTML
 
-   // 1. Navbar scroll
-   window.addEventListener('scroll', () => {
-     document.getElementById('custom-navbar')
-       .classList.toggle('scrolled', window.scrollY > 60);
-   });
-
-   // 2. Scroll reveal
-   const observer = new IntersectionObserver((entries) => {
-     entries.forEach(e => {
-       if (e.isIntersecting) e.target.classList.add('visible');
-     });
-   }, { threshold: 0.15 });
-   document.querySelectorAll('.reveal,.reveal-left,.reveal-right')
-     .forEach(el => observer.observe(el));
-
-   ================================================================ */
 
 
 

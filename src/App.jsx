@@ -13,7 +13,10 @@ function App() {
   useEffect(() => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }, []);
-
+ window.addEventListener('scroll', () => {
+     document.getElementById('custom-navbar')
+       .classList.toggle('scrolled', window.scrollY > 60);
+   });
   return (
     <div className="portfolio-viewport"> 
 <Loader>
