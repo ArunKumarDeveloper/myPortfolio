@@ -14,7 +14,7 @@ function Resume() {
           <div className="resume-content">
             <p>Hire Me.</p>
             <div className="resume-actions">
-              <a href="/Arun Kumar R - Resume.pdf" download className="resume-btn">
+              <a href="/" download className="resume-btn">
                 Download Resume
               </a>
             </div>
