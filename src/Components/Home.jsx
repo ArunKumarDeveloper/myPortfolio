@@ -24,6 +24,7 @@ function Home() {
          <BlurText
          className="home-subtitle"
           text="Hey, I'm Arun Kumar R"
+          
           delay={80}
           animateBy="words"
           direction="top"

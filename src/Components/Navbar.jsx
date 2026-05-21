@@ -13,7 +13,7 @@ function Navbar() {
   const handleToggleDarkMode = () => {
     const newMode = !DarkMode;
     setDarkMode(newMode);
-    setToastMessage(newMode ? "Dark Mode On" : "Light Mode On");
+  
   };
 
 
