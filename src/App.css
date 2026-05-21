@@ -995,19 +995,6 @@ p { color: var(--text-secondary); transition: color 0.4s ease; }
   max-width: 360px;
 }
 
-.footer-subscribe input {
-  flex: 1;
-  padding: 11px 16px;
-  border: 1.5px solid #ddd5c8;
-  border-right: none;
-  border-radius: 999px 0 0 999px;
-  font-size: 0.86rem;
-  font-family: 'Outfit', sans-serif;
-  color: #333;
-  outline: none;
-  background: #fff;
-}
-
 .footer-subscribe input::placeholder { color: #aaa; }
 
 .footer-subscribe button {
@@ -1093,47 +1080,6 @@ p { color: var(--text-secondary); transition: color 0.4s ease; }
 }
 
 .footer-column ul li a:hover { color: var(--accent, #2563eb); }
-
-/* === BIG BRAND BANNER === */
-.footer-brand-banner {
-  background: var(--accent, #2563eb);
-  border-radius: 20px;
-  padding: 0 6vw;
-  margin-bottom: 0;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  overflow: hidden;
-  position: relative;
-  min-height: 160px;
-}
-
-.banner-name {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(4.5rem, 13vw, 10rem);
-  font-weight: 800;
-  color: #fff;
-  letter-spacing: -0.03em;
-  line-height: 1;
-  white-space: nowrap;
-  padding-bottom: 8px;
-  user-select: none;
-}
-
-.banner-illustration {
-  position: relative;
-  bottom: 0;
-  right: 0;
-  height: 180px;
-  display: flex;
-  align-items: flex-end;
-}
-
-.dev-svg {
-  width: 240px;
-  height: 180px;
-  display: block;
-}
 
 /* Divider */
 .footer-divider {
