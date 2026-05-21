@@ -275,65 +275,37 @@ img { display: block; max-width: 100%; }
 }
 
 .home-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
   position: relative; 
   margin: auto;
   z-index: 10;
-  padding: 0 8vw 80px;
+  padding: 0 8vw 50px;
   max-width: 800px;
-  backdrop-filter: blur(3.9px);
-  text-align: left;
+  text-align: center;
   right: auto;
-  background: none;
+  background: rgba(255, 255, 255, 0.289);
   border-radius: 25px;
-  box-shadow: none;
+  box-shadow: 5px 5px 5px rgb(255, 196, 0);
+
 }
 
-.home-overlay .section-pre-title { animation: heroUp 0.9s ease both; animation-delay: 0.2s; }
-.home-overlay .home-subtitle     { animation: heroUp 0.9s ease both; animation-delay: 0.35s; }
-.home-overlay .text-type         { animation: heroUp 0.9s ease both; animation-delay: 0.5s; }
-.home-overlay .text-p            { animation: heroUp 0.9s ease both; animation-delay: 0.65s; }
-.home-overlay .hero-cta-group    { animation: heroUp 0.9s ease both; animation-delay: 0.8s; }
-
-@keyframes heroUp {
-  from { opacity: 0; transform: translateY(32px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-.section-pre-title {
-  display: inline-block;
-  font-family: 'Outfit', sans-serif;
-  font-size: 0.72rem; font-weight: 600;
-  color: var(--accent);
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  margin-bottom: 14px;
-  text-align: left;
-}
 
 .home-subtitle {
   font-family: 'Outfit', sans-serif;
-  font-size: 2rem; font-weight: 500;
-  color: var(--accent);
+  font-size: 2rem; font-weight: 600;
+  color: rgb(235, 208, 8);
   margin-bottom: 12px;
   text-align: left;
+  margin-top: 25px;
 }
 
-.text-type {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(3rem, 6vw, 5.5rem);
-  font-weight: 700;
-  color: #ffffff;
-  line-height: 1.05;
-  letter-spacing: -0.02em;
-  margin-bottom: 22px;
-  text-align: left;
-  max-width: 720px;
-}
 
 .text-p {
   font-family: 'Outfit', sans-serif;
-  font-size: 1rem; font-weight: 700;
-  color: #ffffff;
+  font-size: 1rem; font-weight: 600;
+  color: rgb(0, 0, 0);
   line-height: 1.75;
   max-width: 520px;
   width: auto;
