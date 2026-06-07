@@ -1,45 +1,40 @@
-import { useState, useEffect, useRef } from 'react';
-window.addEventListener('scroll', () => {
-  document.getElementById('custom-navbar')
-    .classList.toggle('scrolled', window.scrollY > 60);
-});
-           
-const obs = new IntersectionObserver(
-  (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
-  { threshold: 0.15 }
-);
-document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el => obs.observe(el));
+import { useState, useEffect, useRef } from "react";
 
 const useMobileMenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const hamburgerRef = useRef(null);
   const navLinksRef = useRef(null);
 
+  const toggleMenu = () => {
+    setIsMenuOpen((prev) => !prev);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   useEffect(() => {
-    const navLinksElement = navLinksRef.current;
-    if (!navLinksElement) return;
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setIsMenuOpen(false);
+      }
+    };
 
-    const handleNavLinkClick = () => setIsMenuOpen(false);
-
-    const links = navLinksElement.querySelectorAll('a');
-    links.forEach(link => {
-      link.addEventListener('click', handleNavLinkClick);
-    });
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      links.forEach(link => {
-        link.removeEventListener('click', handleNavLinkClick);
-      });
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   return {
     isMenuOpen,
-    toggleMenu: () => setIsMenuOpen(prev => !prev),
+    toggleMenu,
+    closeMenu,
     hamburgerRef,
     navLinksRef,
   };
 };
-
 
 export default useMobileMenu;

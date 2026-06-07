@@ -8,6 +8,7 @@ import Resume from './Components/Resume';
 import Certificates from './Components/Certificates'
 import { useEffect } from 'react';
 import './App.css';
+import Footer from './Components/Footer';
 
 function App() {
   useEffect(() => {
@@ -27,6 +28,7 @@ function App() {
       <Skills />
       <Resume />
       <Certificates />
+      <Footer />
       </Loader>
     </div>
   );

@@ -1,107 +1,70 @@
-import BlurText from "./BlurText";
+import React, { useState, useEffect } from 'react';
+import BlurText from './BlurText';
  
 function Home() {
-  const handleAnimationComplete = () => {
-    console.log('Text animation completed!');
-  };
+  const [time, setTime] = useState('');
+
  
   return (
-    <section id="home">
+    <section id="home" className="ez-hero">
  
-      {/* Social Handles */}
-      <div className="handle">
-        <a href="https://github.com/ArunKumarDeveloper" target="_blank" aria-label="GitHub">
-          <img src="handle (1).png" />
-        </a>
-        <a href="https://www.linkedin.com/in/arun-kumar-r-920841235" target="_blank" aria-label="LinkedIn">
-          <img src="handle (2).png" />
-        </a>
-      </div>
+      {/* ── Hero Card ── */}
+      <div className="ez-hero__card">
  
-      {/* Left content */}
-      <div className="home-overlay">
-        <BlurText
-          className="home-subtitle"
-          text="Hey, I'm Arun Kumar R"
-          delay={80}
-          animateBy="words"
-          direction="top"
-          onAnimationComplete={handleAnimationComplete}
-        />
- 
-        <BlurText
-          className="text-p"
-          text="Turning ideas into clean & modern code, RHCSA-certified Linux professional and front-end developer skilled in JavaScript, HTML, CSS, and Red Hat Enterprise Linux. Passionate about building responsive web applications, solving technical problems, and creating reliable digital experiences."
-          delay={80}
-          animateBy="words"
-          direction="top"
-          onAnimationComplete={handleAnimationComplete}
-        />
- 
-        <div className="hero-cta-group">
-          <button className="btn-primary"><a href="#projects">View Work</a></button>
-          
-        </div>
-      </div>
- 
-      {/* Glass Profile Card - Right Side */}
-      <div className="glass-card-wrap">
-        <div className="glass-card">
- 
-          {/* Avatar */}
-          <div className="glass-avatar">
-            {/* Replace src with your actual photo path e.g. src="arun.jpg" */}
-            <img src="arun (1).png" alt="Arun Kumar R" className="glass-avatar-img" />
-          </div>
- 
-          {/* Name & Role */}
-          <p className="glass-role">Linux Sysadmin · Frontend Dev</p>
- 
-          {/* Divider */}
-          <div className="glass-divider" />
- 
-          {/* Stats row */}
-          <div className="glass-stats">
-            <div className="glass-stat">
-              <span className="glass-stat-num">1.8<span className="glass-stat-unit">yr</span></span>
-              <span className="glass-stat-label">Experience</span>
+        {/* Top row inside card */}
+        <div className="ez-hero__card-top">
+          {/* Avatar badge */}
+          <div className="ez-hero__avatar-badge">
+            <div className="ez-hero__avatar-img">
+              <img src="/arun (1).png" alt="Arun Kumar R" />
             </div>
-            <div className="glass-stat-sep" />
-            <div className="glass-stat">
-              <span className="glass-stat-num">RHCSA</span>
-              <span className="glass-stat-label">Certified</span>
+            <div className="ez-hero__avatar-info">
+              <span className="ez-hero__avatar-name">
+                Arun Kumar R<span className="ez-hero__reg">®</span>
+              </span>
+              <span className="ez-hero__avatar-sub">Frontend Dev · RHCSA Certified</span>
             </div>
-            <div className="glass-stat-sep" />
-            <div className="glass-stat">
-              <span className="glass-stat-num">5+</span>
-              <span className="glass-stat-label">Projects</span>
-            </div>
-          </div>
- 
-          {/* Divider */}
-          <div className="glass-divider" />
- 
-          {/* Skill badges */}
-          <div className="glass-badges">
-            <span className="glass-badge">RHCSA</span>
-            <span className="glass-badge">HTML</span>
-            <span className="glass-badge">CSS</span>
-            <span className="glass-badge">JAVASCRIPT</span>
-            <span className="glass-badge">LINUX</span>
-          </div>
- 
-          {/* Status pill */}
-          <div className="glass-status">
-            <span className="glass-status-dot" />
-            Available for opportunities
           </div>
  
         </div>
+ 
+        {/* Center tagline */}
+        <div className="ez-hero__center">
+          <p className="ez-hero__tagline">
+           Growing through projects, problem-solving, and continuous learning<br/>
+           Building skills through real projects and practical experience.
+          </p>
+          <a href="#projects" className="ez-hero__view-work">
+            View Projects
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+              <path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </a>
+        </div>
       </div>
  
-      {/* Scroll hint */}
-      <div className="scroll-hint">Scroll</div>
- 
+      {/* ── Social Bar ── */}
+      <div className="ez-hero__social-bar">
+        <a href="https://github.com/ArunKumarDeveloper" target="_blank" rel="noopener noreferrer" className="ez-hero__social-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/arun-kumar-r-920841235" target="_blank" rel="noopener noreferrer" className="ez-hero__social-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/>
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="mailto:arunlokesh78@gmail.com" className="ez-hero__social-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+          </svg>
+          <span>Email</span>
+        </a>
+     
+      </div>
     </section>
   );
 }
