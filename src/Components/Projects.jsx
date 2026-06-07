@@ -15,7 +15,7 @@ const projects = [
     img: '/project2.png',
     desc: 'A modern recipe search app built with React. Integrated Spoonacular API for real-time recipe data, dynamic search, and step-by-step instructions.',
     github: 'https://github.com/ArunKumarWebDeveloper/FlavorFind',
-    live: 'https://flavor-find-phi.vercel.app/',
+    live: 'https://flavor-find-eosin.vercel.app/',
   },
 ];
  
