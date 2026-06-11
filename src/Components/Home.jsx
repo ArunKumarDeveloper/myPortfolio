@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import BlurText from './BlurText';
  
 function Home() {
   const [time, setTime] = useState('');
